@@ -1,0 +1,286 @@
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+}
+
+header #logo {
+  display: flex;
+  align-items: center;
+}
+
+header #logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+header #logo span {
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Estilos generales */
+body {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #d9eefe; /* Azul claro */
+  padding-top: 60px; /* Para que no se cubra el contenido por el header */
+  padding-bottom: 50px; /* Para que el footer no tape el contenido */
+}
+
+#game-screen,
+#start-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Pantalla de inicio - Espaciado y márgenes */
+#start-screen h1 {
+  margin-bottom: 10px;
+}
+
+#start-screen input {
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 250px;
+  margin-top: 10px;
+}
+
+#start-screen button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#start-screen button:hover {
+  background-color: #45a049;
+}
+
+/* Información del jugador */
+#player-info {
+  position: absolute;
+  top: 50px; /* Lo bajamos un poco para que se vea mejor */
+  left: 10px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Puntuación y racha */
+#scoreboard {
+  position: absolute;
+  top: 50px; /* Lo bajamos un poco para que no se vea tapado */
+  right: 10px;
+  display: flex;
+  gap: 15px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Título del juego */
+#game-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#question-box {
+  border: 2px solid #4caf50;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#question-text {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Caritas */
+.caritas {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.caritas img {
+  max-width: 100px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.caritas img:hover {
+  transform: scale(1.1);
+}
+
+/* Mensaje */
+#message {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/*_______________________________________*/
+/*Temportizador:*/
+
+#game-info {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.2rem;
+  color: #333;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+#timer,
+#question-progress {
+  font-weight: bold;
+}
+
+#intro-text {
+  text-align: center;
+  margin: 20px;
+}
+
+#intro-text h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+#intro-text p {
+  font-size: 1.1rem;
+  color: #000000;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+#intro-text {
+  text-align: center;
+  margin: 20px;
+}
+
+#intro-text h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+#intro-text p {
+  font-size: 1.1rem;
+  color: #000000;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+#start-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#start-btn:hover {
+  background-color: #45a049;
+}
+
+#loading-screen {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Estilo global para el contenedor */
+/* Estilo global para el contenedor */
+.container {
+  display: flex;
+  justify-content: flex-start; /* Alinea el contenido al lado izquierdo */
+  align-items: flex-start; /* Alinea el contenido de forma vertical desde la parte superior */
+  height: 100vh; /* Ocupa todo el alto de la ventana */
+  padding: 20px; /* Espaciado alrededor del contenido */
+  box-sizing: border-box;
+}
+
+/* Estilo para el contenido de la introducción */
+#intro-text {
+  display: block; /* Hace que el contenido se apile verticalmente */
+  margin-left: 0; /* Asegura que no haya margen extra a la izquierda */
+  text-align: left; /* Asegura que todo el texto esté alineado a la izquierda */
+  width: auto; /* No tiene un ancho fijo */
+}
+
+/* Estilo para los párrafos dentro de la introducción */
+#intro-text p {
+  margin: 10px 0; /* Espaciado entre los párrafos */
+  text-align: left; /* Alineación a la izquierda */
+}
+
+/* Estilo para el botón */
+#start-btn {
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-align: left; /* Asegura que el texto en el botón también se alinee a la izquierda */
+}
+
+.emoji-container {
+  display: flex;
+  gap: 10px; /* Espacio entre los emojis */
+  justify-content: flex-start; /* Alinea los emojis a la izquierda dentro del contenedor */
+  position: absolute; /* Los posiciona de forma absoluta */
+  top: 250px; /* Se coloca en la parte superior */
+  right: 100px; /* Y se alinea a la derecha */
+  z-index: -1;
+}
+
+.emoji {
+  width: 200px; /* Ajusta el tamaño de los emojis */
+  height: 200px;
+  border: 3px solid #000; /* Borde alrededor de las imágenes */
+  border-radius: 8px; /* Bordes redondeados */
+}

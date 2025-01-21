@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTERDISCIPLINARIO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div id="logo">
+            <!-- Solo la imagen será el enlace clicable -->
+            <a href="index.html">
+                <img src="logo.jpeg" alt="Logo" />
+            </a>
+            <!-- Título junto al logo -->
+            <span>PROYECTO INTERDISCIPLINARIO "1ero B"</span>
+        </div>
+    </header>
+
+
+
+
+    <body>
+        <!-- Pantalla de Introducción -->
+        <div class="container">
+            <div id="intro-text">
+                <h2>¿Sabes identificar las emociones?</h2>
+                <p>
+                    Las emociones son reacciones naturales a diferentes situaciones de</p>
+                <p>la vida diaria. Algunas veces son
+                    fáciles de reconocer,</p>
+                <p>la felicidad al recibir una buena noticia o la tristeza al enfrentar una</p>
+                <p>pérdida.
+                <p>Otras veces, las emociones pueden ser más complejas</p>
+                <p>y difíciles de identificar.</p>
+
+                <p>
+                    En este reto, tendrás que identificar cómo se sienten las personas</p>
+                <p>en situaciones cotidianas.</p>
+                <p>¿Crees que puedes reconocer las emociones correctamente?</p>
+                <p>¡Pon a prueba tus habilidades y demuestra cuánto
+                    sabes</p>
+                <p>menos de 3 minutos!</p>
+
+                <button id="start-btn" onclick="startGame()">¡Quiero Intentarlo!</button>
+            </div>
+        </div>
+
+        <div class="emoji-container">
+            <img src="happy.jpeg" alt="Feliz" class="emoji">
+            <img src="sad.jpeg" alt="Triste" class="emoji">
+            <img src="angry.png" alt="Enojado" class="emoji">
+            <img src="surprised.jpeg" alt="Sorprendido" class="emoji">
+        </div>
+
+
+        <script>
+            // Redirige al juego
+            function startGame() {
+                window.location.href = "game.html";  // Redirige a game.html
+            }
+        </script>
+
+        <!-- Pantalla de carga -->
+        <div id="loading-screen" style="display: none;">Cargando...</div>
+
+    </body>
+
+</html>
+
+
+<!-- Footer -->
+<footer>
+    <p>&copy; SILVA ACOSTA YAMIT SANTIAGO</p>
+</footer>
+
+<script src="game.js"></script>
+</body>
+
+</html>
